@@ -39,10 +39,7 @@ public class User {
 	
 	@Override
 	public String toString() {
-		return firstName + " "  + lastName;
+		return firstName + " " + lastName + " " + "Wellcome to the page" ;
 	}
-	public boolean containsKey(String keyword) {
-		// TODO Auto-generated method stub
-		return false;
-	}
+
 }

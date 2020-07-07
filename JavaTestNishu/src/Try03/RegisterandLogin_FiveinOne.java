@@ -79,26 +79,25 @@ public class RegisterandLogin_FiveinOne {
 			System.out.println("Login to the Page");
 			System.out.println("Enter the username = ");
 			String username = scanner.nextLine();
-			System.out.print(user.getUserName());
+
 			
 			System.out.print("Enter the password = ");
 			String password  = scanner.nextLine();
-			System.out.print(user.getPassaword());
+
 			
 			//Search in the exiting hasMap the keyword that the user inputed
 			if(!user.getUserName().contains(username)) {
 				//if found : return a simple message that the user is found using the keyword
 				System.out.println(" User dose not exist");
-			}else if (user.getUserName().contains(username)) {		
-				System.out.println(" Wellcome to the page");
-			}else if (user.getFirstName().contains(username)) {
+			}else if (user.getUserName().contains(username)) {
 				if(!user.getPassaword().contains(password)) {
 					System.out.print(" Password is incorrect.");
 				}else {
 					//display a message that user (keyword) is not found
-					System.out.println("We dont find waht you are lokking for");
-					
+					System.out.println(user.toString());
 				}				
-			}			
+			} else {
+				System.out.println("We dont find waht you are lokking for");
+			}
 		}
 }
